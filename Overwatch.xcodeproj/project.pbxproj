@@ -7,23 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B6F71221DBA4FFF003CF602 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F71211DBA4FFF003CF602 /* Game.swift */; };
 		7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */; };
-		7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6C1DAAF58B006B180A /* ViewController.swift */; };
 		7D69AE701DAAF58B006B180A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE6E1DAAF58B006B180A /* Main.storyboard */; };
 		7D69AE721DAAF58B006B180A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE711DAAF58B006B180A /* Assets.xcassets */; };
 		7D69AE751DAAF58B006B180A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */; };
 		7D69AE801DAAF58B006B180A /* OverwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE7F1DAAF58B006B180A /* OverwatchTests.swift */; };
-		7D69AE8D1DAAFDAE006B180A /* OverwatchHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */; };
-		7D69AE8F1DAB0E8A006B180A /* OverwatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */; };
-		7DC007E31DB9B0ED004A9268 /* HeroAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */; };
 		7DC007E51DB9B18C004A9268 /* HeroNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E41DB9B18C004A9268 /* HeroNameTests.swift */; };
 		7DC007E71DB9B3DF004A9268 /* HeroTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */; };
 		7DC007EA1DB9B654004A9268 /* WeaponProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */; };
 		7DC007EC1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */; };
-		7DC007EE1DB9C7B3004A9268 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007ED1DB9C7B3004A9268 /* Hero.swift */; };
 		7DC007F01DB9CB41004A9268 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007EF1DB9CB41004A9268 /* HeroTests.swift */; };
-		7DDE479B1DB3F3C300BC431E /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B6F71211DBA4FFF003CF602 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7D69AE671DAAF58B006B180A /* Overwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D69AE6C1DAAF58B006B180A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D69AE6F1DAAF58B006B180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D69AE711DAAF58B006B180A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D69AE741DAAF58B006B180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,16 +39,11 @@
 		7D69AE7B1DAAF58B006B180A /* OverwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D69AE7F1DAAF58B006B180A /* OverwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchTests.swift; sourceTree = "<group>"; };
 		7D69AE811DAAF58B006B180A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHero.swift; sourceTree = "<group>"; };
-		7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchButton.swift; sourceTree = "<group>"; };
-		7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroAttributes.swift; sourceTree = "<group>"; };
 		7DC007E41DB9B18C004A9268 /* HeroNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroNameTests.swift; sourceTree = "<group>"; };
 		7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTypeTests.swift; sourceTree = "<group>"; };
 		7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponProtocolTests.swift; sourceTree = "<group>"; };
 		7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHeroProtocolTests.swift; sourceTree = "<group>"; };
-		7DC007ED1DB9C7B3004A9268 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		7DC007EF1DB9CB41004A9268 /* HeroTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
-		7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,18 +85,11 @@
 		7D69AE691DAAF58B006B180A /* Overwatch */ = {
 			isa = PBXGroup;
 			children = (
-				7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */,
-				7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */,
-				7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */,
-				7DC007ED1DB9C7B3004A9268 /* Hero.swift */,
-				5B6F71211DBA4FFF003CF602 /* Game.swift */,
 				7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */,
-				7D69AE6C1DAAF58B006B180A /* ViewController.swift */,
 				7D69AE6E1DAAF58B006B180A /* Main.storyboard */,
 				7D69AE711DAAF58B006B180A /* Assets.xcassets */,
 				7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */,
 				7D69AE761DAAF58B006B180A /* Info.plist */,
-				7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */,
 			);
 			path = Overwatch;
 			sourceTree = "<group>";
@@ -242,14 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D69AE8F1DAB0E8A006B180A /* OverwatchButton.swift in Sources */,
-				5B6F71221DBA4FFF003CF602 /* Game.swift in Sources */,
-				7DDE479B1DB3F3C300BC431E /* SelectionViewController.swift in Sources */,
-				7DC007EE1DB9C7B3004A9268 /* Hero.swift in Sources */,
-				7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */,
-				7DC007E31DB9B0ED004A9268 /* HeroAttributes.swift in Sources */,
 				7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */,
-				7D69AE8D1DAAFDAE006B180A /* OverwatchHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
