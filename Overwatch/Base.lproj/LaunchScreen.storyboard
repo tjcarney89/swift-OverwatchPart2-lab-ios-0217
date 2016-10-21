@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OverwatchSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-vL-v6H">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fm8-vL-v6H" secondAttribute="height" multiplier="1:1" id="VEp-M4-FCO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHu-GU-em8">
+                                <attributedString key="attributedText">
+                                    <fragment content="Overwatch">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="55" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MHu-GU-em8" firstAttribute="bottom" secondItem="Fm8-vL-v6H" secondAttribute="top" constant="-8" id="EDJ-Uf-fBs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fm8-vL-v6H" secondAttribute="leading" id="H5H-9z-Dbu"/>
+                            <constraint firstItem="Fm8-vL-v6H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HED-YL-QTc"/>
+                            <constraint firstItem="Fm8-vL-v6H" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UER-Hf-6Re"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fm8-vL-v6H" secondAttribute="trailing" id="Wlb-BT-vUb"/>
+                            <constraint firstItem="MHu-GU-em8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tuo-I3-ebP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OverwatchSymbol" width="665" height="665"/>
+    </resources>
+</document>

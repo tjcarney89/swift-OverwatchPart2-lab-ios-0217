@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B6F71221DBA4FFF003CF602 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F71211DBA4FFF003CF602 /* Game.swift */; };
+		7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */; };
+		7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6C1DAAF58B006B180A /* ViewController.swift */; };
+		7D69AE701DAAF58B006B180A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE6E1DAAF58B006B180A /* Main.storyboard */; };
+		7D69AE721DAAF58B006B180A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE711DAAF58B006B180A /* Assets.xcassets */; };
+		7D69AE751DAAF58B006B180A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */; };
+		7D69AE801DAAF58B006B180A /* OverwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE7F1DAAF58B006B180A /* OverwatchTests.swift */; };
+		7D69AE8D1DAAFDAE006B180A /* OverwatchHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */; };
+		7D69AE8F1DAB0E8A006B180A /* OverwatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */; };
+		7DC007E31DB9B0ED004A9268 /* HeroAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */; };
+		7DC007E51DB9B18C004A9268 /* HeroNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E41DB9B18C004A9268 /* HeroNameTests.swift */; };
+		7DC007E71DB9B3DF004A9268 /* HeroTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */; };
+		7DC007EA1DB9B654004A9268 /* WeaponProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */; };
+		7DC007EC1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */; };
+		7DC007EE1DB9C7B3004A9268 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007ED1DB9C7B3004A9268 /* Hero.swift */; };
+		7DC007F01DB9CB41004A9268 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007EF1DB9CB41004A9268 /* HeroTests.swift */; };
+		7DDE479B1DB3F3C300BC431E /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D69AE7C1DAAF58B006B180A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D69AE5F1DAAF58B006B180A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D69AE661DAAF58B006B180A;
+			remoteInfo = Overwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B6F71211DBA4FFF003CF602 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7D69AE671DAAF58B006B180A /* Overwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D69AE6C1DAAF58B006B180A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D69AE6F1DAAF58B006B180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D69AE711DAAF58B006B180A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D69AE741DAAF58B006B180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D69AE761DAAF58B006B180A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D69AE7B1DAAF58B006B180A /* OverwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D69AE7F1DAAF58B006B180A /* OverwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchTests.swift; sourceTree = "<group>"; };
+		7D69AE811DAAF58B006B180A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHero.swift; sourceTree = "<group>"; };
+		7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchButton.swift; sourceTree = "<group>"; };
+		7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroAttributes.swift; sourceTree = "<group>"; };
+		7DC007E41DB9B18C004A9268 /* HeroNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroNameTests.swift; sourceTree = "<group>"; };
+		7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTypeTests.swift; sourceTree = "<group>"; };
+		7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponProtocolTests.swift; sourceTree = "<group>"; };
+		7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHeroProtocolTests.swift; sourceTree = "<group>"; };
+		7DC007ED1DB9C7B3004A9268 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		7DC007EF1DB9CB41004A9268 /* HeroTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
+		7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D69AE641DAAF58B006B180A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D69AE781DAAF58B006B180A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D69AE5E1DAAF58B006B180A = {
+			isa = PBXGroup;
+			children = (
+				7D69AE691DAAF58B006B180A /* Overwatch */,
+				7D69AE7E1DAAF58B006B180A /* OverwatchTests */,
+				7D69AE681DAAF58B006B180A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D69AE681DAAF58B006B180A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D69AE671DAAF58B006B180A /* Overwatch.app */,
+				7D69AE7B1DAAF58B006B180A /* OverwatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D69AE691DAAF58B006B180A /* Overwatch */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE479A1DB3F3C300BC431E /* SelectionViewController.swift */,
+				7DC007E21DB9B0ED004A9268 /* HeroAttributes.swift */,
+				7D69AE8C1DAAFDAE006B180A /* OverwatchHero.swift */,
+				7DC007ED1DB9C7B3004A9268 /* Hero.swift */,
+				5B6F71211DBA4FFF003CF602 /* Game.swift */,
+				7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */,
+				7D69AE6C1DAAF58B006B180A /* ViewController.swift */,
+				7D69AE6E1DAAF58B006B180A /* Main.storyboard */,
+				7D69AE711DAAF58B006B180A /* Assets.xcassets */,
+				7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */,
+				7D69AE761DAAF58B006B180A /* Info.plist */,
+				7D69AE8E1DAB0E8A006B180A /* OverwatchButton.swift */,
+			);
+			path = Overwatch;
+			sourceTree = "<group>";
+		};
+		7D69AE7E1DAAF58B006B180A /* OverwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DC007E41DB9B18C004A9268 /* HeroNameTests.swift */,
+				7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */,
+				7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */,
+				7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */,
+				7DC007EF1DB9CB41004A9268 /* HeroTests.swift */,
+				7DC007E81DB9B3E8004A9268 /* SupportingFilesTests */,
+			);
+			path = OverwatchTests;
+			sourceTree = "<group>";
+		};
+		7DC007E81DB9B3E8004A9268 /* SupportingFilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D69AE7F1DAAF58B006B180A /* OverwatchTests.swift */,
+				7D69AE811DAAF58B006B180A /* Info.plist */,
+			);
+			name = SupportingFilesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D69AE661DAAF58B006B180A /* Overwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D69AE841DAAF58B006B180A /* Build configuration list for PBXNativeTarget "Overwatch" */;
+			buildPhases = (
+				7D69AE631DAAF58B006B180A /* Sources */,
+				7D69AE641DAAF58B006B180A /* Frameworks */,
+				7D69AE651DAAF58B006B180A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overwatch;
+			productName = Overwatch;
+			productReference = 7D69AE671DAAF58B006B180A /* Overwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D69AE7A1DAAF58B006B180A /* OverwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D69AE871DAAF58B006B180A /* Build configuration list for PBXNativeTarget "OverwatchTests" */;
+			buildPhases = (
+				7D69AE771DAAF58B006B180A /* Sources */,
+				7D69AE781DAAF58B006B180A /* Frameworks */,
+				7D69AE791DAAF58B006B180A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D69AE7D1DAAF58B006B180A /* PBXTargetDependency */,
+			);
+			name = OverwatchTests;
+			productName = OverwatchTests;
+			productReference = 7D69AE7B1DAAF58B006B180A /* OverwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D69AE5F1DAAF58B006B180A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Gamesmith, LLC";
+				TargetAttributes = {
+					7D69AE661DAAF58B006B180A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3E2QGNXM7N;
+						ProvisioningStyle = Automatic;
+					};
+					7D69AE7A1DAAF58B006B180A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3E2QGNXM7N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D69AE661DAAF58B006B180A;
+					};
+				};
+			};
+			buildConfigurationList = 7D69AE621DAAF58B006B180A /* Build configuration list for PBXProject "Overwatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D69AE5E1DAAF58B006B180A;
+			productRefGroup = 7D69AE681DAAF58B006B180A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D69AE661DAAF58B006B180A /* Overwatch */,
+				7D69AE7A1DAAF58B006B180A /* OverwatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D69AE651DAAF58B006B180A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D69AE751DAAF58B006B180A /* LaunchScreen.storyboard in Resources */,
+				7D69AE721DAAF58B006B180A /* Assets.xcassets in Resources */,
+				7D69AE701DAAF58B006B180A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D69AE791DAAF58B006B180A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D69AE631DAAF58B006B180A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D69AE8F1DAB0E8A006B180A /* OverwatchButton.swift in Sources */,
+				5B6F71221DBA4FFF003CF602 /* Game.swift in Sources */,
+				7DDE479B1DB3F3C300BC431E /* SelectionViewController.swift in Sources */,
+				7DC007EE1DB9C7B3004A9268 /* Hero.swift in Sources */,
+				7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */,
+				7DC007E31DB9B0ED004A9268 /* HeroAttributes.swift in Sources */,
+				7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */,
+				7D69AE8D1DAAFDAE006B180A /* OverwatchHero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D69AE771DAAF58B006B180A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC007E71DB9B3DF004A9268 /* HeroTypeTests.swift in Sources */,
+				7DC007F01DB9CB41004A9268 /* HeroTests.swift in Sources */,
+				7DC007E51DB9B18C004A9268 /* HeroNameTests.swift in Sources */,
+				7D69AE801DAAF58B006B180A /* OverwatchTests.swift in Sources */,
+				7DC007EA1DB9B654004A9268 /* WeaponProtocolTests.swift in Sources */,
+				7DC007EC1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D69AE7D1DAAF58B006B180A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D69AE661DAAF58B006B180A /* Overwatch */;
+			targetProxy = 7D69AE7C1DAAF58B006B180A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D69AE6E1DAAF58B006B180A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D69AE6F1DAAF58B006B180A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D69AE741DAAF58B006B180A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D69AE821DAAF58B006B180A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D69AE831DAAF58B006B180A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D69AE851DAAF58B006B180A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				INFOPLIST_FILE = Overwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.Overwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7D69AE861DAAF58B006B180A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				INFOPLIST_FILE = Overwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.Overwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7D69AE881DAAF58B006B180A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				INFOPLIST_FILE = OverwatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.OverwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch.app/Overwatch";
+			};
+			name = Debug;
+		};
+		7D69AE891DAAF58B006B180A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				INFOPLIST_FILE = OverwatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.OverwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch.app/Overwatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D69AE621DAAF58B006B180A /* Build configuration list for PBXProject "Overwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D69AE821DAAF58B006B180A /* Debug */,
+				7D69AE831DAAF58B006B180A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D69AE841DAAF58B006B180A /* Build configuration list for PBXNativeTarget "Overwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D69AE851DAAF58B006B180A /* Debug */,
+				7D69AE861DAAF58B006B180A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D69AE871DAAF58B006B180A /* Build configuration list for PBXNativeTarget "OverwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D69AE881DAAF58B006B180A /* Debug */,
+				7D69AE891DAAF58B006B180A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D69AE5F1DAAF58B006B180A /* Project object */;
+}
