@@ -82,3 +82,6 @@ Some hints:
 
 Some other hints:
 * Being a `UIScrollViewDelegate`, we can implement certain methods that the `heroScrollView` can call on (in that `self` is now the delegate). Look through some of the methods we can implement by option clicking `UIScrollViewDelegate`. The one I used here was `scrollViewDidEndDecelerating(_:)`. Within that method I'm doing some math to see where the person has scrolled to. Doing some more math to grab that hero from the `game.heroes` array. After doing that, I'm updating the label with that information. This is good to put in a separate method.
+
+
+**Advanced**: If the user is scrolling from one hero to the next. Fade out the label (and have it grow at the same time as it fades) and have another one come in that starts off very small (with the incoming characters name). 
