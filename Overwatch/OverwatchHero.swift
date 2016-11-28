@@ -83,4 +83,17 @@ extension OverwatchHero {
 }
 
 
+extension UIView {
+    
+    func removeAllSubViews() {
+        
+        for view in self.subviews {
+            view.removeFromSuperview()
+            self.willRemoveSubview(view)
+        }
+        
+    }
+    
+}
+
 

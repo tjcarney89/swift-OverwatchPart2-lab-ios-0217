@@ -16,6 +16,16 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroScrollView: UIScrollView!
     
+    @IBOutlet weak var firstImageView: UIImageView!
+    @IBOutlet weak var secondImageView: UIImageView!
+    @IBOutlet weak var thirdImageView: UIImageView!
+    @IBOutlet weak var fourthImageView: UIImageView!
+    @IBOutlet weak var fifthImageView: UIImageView!
+    @IBOutlet weak var sixthImageView: UIImageView!
+    
+    var images: [UIImageView]!
+    
+    
     var game: Game = Game()
     
     var heroType: HeroType! {
@@ -28,32 +38,36 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         heroScrollView.delegate = self
+        images = [firstImageView, secondImageView, thirdImageView, fourthImageView, fifthImageView, sixthImageView]
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         heroType = .offense
     }
     
     func updateStackViewWithHeroes() {
         heroScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-
-        while !characterStackView.subviews.isEmpty {
-            let subview = characterStackView.subviews.last! as! UIImageView
-            subview.removeFromSuperview()
-            characterStackView.removeArrangedSubview(subview)
+        
+        var index = game.heroes.count
+        
+        while index != 6 {
+            images[index].isHidden = true
+            index += 1
         }
         
-        let numberOfHeroes = CGFloat(game.heroes.count)
-        let width = (view.frame.size.width - 40) * CGFloat(numberOfHeroes - 1)
-        characterStackViewWidthConstraint.constant = width
+        let newWidth = containerView.frame.width * CGFloat(game.heroes.count - 1)
+        characterStackViewWidthConstraint.constant = newWidth
         
-        for hero in game.heroes {
-            let imageView = UIImageView(image: hero.profileImage)
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            imageView.contentMode = .scaleAspectFit
-            imageView.clipsToBounds = true
-            characterStackView.addArrangedSubview(imageView)
+        for (index, hero) in game.heroes.enumerated() {
+            let imageView = images[index]
+            imageView.isHidden = false
+            imageView.image = hero.profileImage
         }
         
         updateNameLabel()
@@ -79,12 +93,10 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func updateNameLabel() {
-        
         let placeInScrollView = Int(heroScrollView.contentOffset.x / heroScrollView.frame.size.width)
         let hero = game.heroes[placeInScrollView]
         heroNameLabel.text = hero.name.description
-        
     }
-
-
+    
+    
 }

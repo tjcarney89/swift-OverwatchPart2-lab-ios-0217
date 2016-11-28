@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vwb-vh-yrl">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vwb-vh-yrl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -36,7 +36,16 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mon-9a-Bo5">
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="em1-gq-PMN"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="em1-gq-PMN">
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P5i-BF-omi"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTV-XX-Ezl"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VtK-nb-Oy1"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-yj-ESR"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="11K-J6-ERh"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-Xe-Axf"/>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="em1-gq-PMN" firstAttribute="top" secondItem="mon-9a-Bo5" secondAttribute="top" id="K67-2W-1lF"/>
@@ -84,8 +93,14 @@
                         <outlet property="characterStackView" destination="em1-gq-PMN" id="Y71-1C-OaY"/>
                         <outlet property="characterStackViewWidthConstraint" destination="ivR-xf-sXz" id="06w-fj-wqp"/>
                         <outlet property="containerView" destination="bRC-vD-dPt" id="RJb-T0-Caj"/>
+                        <outlet property="fifthImageView" destination="11K-J6-ERh" id="Ydz-L6-sQE"/>
+                        <outlet property="firstImageView" destination="P5i-BF-omi" id="HzV-Pi-z2Q"/>
+                        <outlet property="fourthImageView" destination="eqg-yj-ESR" id="So6-KI-GV2"/>
                         <outlet property="heroNameLabel" destination="llC-r8-BSX" id="n6H-H6-pk8"/>
                         <outlet property="heroScrollView" destination="mon-9a-Bo5" id="fbX-59-DvD"/>
+                        <outlet property="secondImageView" destination="bTV-XX-Ezl" id="RS4-Ij-uVI"/>
+                        <outlet property="sixthImageView" destination="5V3-Xe-Axf" id="TCY-RT-uby"/>
+                        <outlet property="thirdImageView" destination="VtK-nb-Oy1" id="GRI-fu-kHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhr-0Z-uhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
