@@ -1,8 +1,89 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hHN-1C-9Rn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="jo1-lv-j7I">
+            <objects>
+                <viewController id="hHN-1C-9Rn" customClass="SelectionViewController" customModule="Overwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2SI-oh-1Ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="qgO-H6-RJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkR-mc-qK2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reaper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06d-mA-QPp">
+                                <rect key="frame" x="110" y="101" width="155" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-x7-Hhn" userLabel="Container View">
+                                <rect key="frame" x="35" y="282" width="304" height="320"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGA-Ou-QKl">
+                                        <rect key="frame" x="-7" y="-7" width="318" height="335"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFB-vH-u5y">
+                                                <rect key="frame" x="-7" y="-8" width="334" height="351"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="304" id="85t-km-oeL"/>
+                                                    <constraint firstAttribute="height" constant="320" id="t31-Gi-QP9"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OGA-Ou-QKl" secondAttribute="trailing" id="aCw-dj-nze"/>
+                                    <constraint firstAttribute="bottom" secondItem="OGA-Ou-QKl" secondAttribute="bottom" id="dJT-D5-r5f"/>
+                                    <constraint firstItem="OGA-Ou-QKl" firstAttribute="leading" secondItem="cCa-x7-Hhn" secondAttribute="leading" id="nBV-hX-7ut"/>
+                                    <constraint firstItem="OGA-Ou-QKl" firstAttribute="top" secondItem="cCa-x7-Hhn" secondAttribute="top" id="xHr-Ff-maH"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="moB-3u-YQs">
+                                <rect key="frame" x="25" y="619" width="324" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Offense"/>
+                                    <segment title="Defense"/>
+                                    <segment title="Tank"/>
+                                    <segment title="Support"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeInHeroType:" destination="hHN-1C-9Rn" eventType="valueChanged" id="USd-Dt-Xdf"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cCa-x7-Hhn" firstAttribute="leading" secondItem="hkR-mc-qK2" secondAttribute="leadingMargin" constant="20" id="KAc-69-TTq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cCa-x7-Hhn" secondAttribute="trailing" constant="20" id="KPZ-Cl-j32"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterStackView" destination="LFB-vH-u5y" id="xYQ-To-ft6"/>
+                        <outlet property="characterStackViewWidthConstraint" destination="85t-km-oeL" id="f2m-TH-1VV"/>
+                        <outlet property="containerView" destination="cCa-x7-Hhn" id="jmO-QP-m1K"/>
+                        <outlet property="heroNameLabel" destination="06d-mA-QPp" id="Fgq-47-Kn0"/>
+                        <outlet property="heroScrollView" destination="OGA-Ou-QKl" id="CfU-vn-5h8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vY-1B-hsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578.39999999999998" y="17.541229385307346"/>
+        </scene>
+    </scenes>
 </document>
