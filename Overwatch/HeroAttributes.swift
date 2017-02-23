@@ -14,6 +14,10 @@ enum HeroName: String, CustomStringConvertible {
         switch self {
         case .soldier76:
             return "Soldier 76"
+        case .mcCree:
+            return "McCree"
+        case .dva:
+            return "DVA"
         default:
             return rawValue.capitalized
         }

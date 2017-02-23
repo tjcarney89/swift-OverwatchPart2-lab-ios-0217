@@ -33,17 +33,15 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         heroType = .offense
     }
-    
 
     @IBAction func changeInHeroType(_ sender: UISegmentedControl) {
+        let point = CGPoint(x: 0, y: 0)
+        heroScrollView.setContentOffset(point, animated: false)
+        
         switch sender.selectedSegmentIndex {
         case 0:
             heroType = .offense
@@ -59,20 +57,54 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func updateStackViewWithHeroes() {
-        for hero in game.offenseCharacters {
-            let imageView = UIImageView.init(image: hero.profileImage)
-            characterStackView.addArrangedSubview(imageView)
-            
-            containerView.addSubview(characterStackView)
-            
-            
-            print("Function Called")
-            
+        
+        for view in characterStackView.arrangedSubviews {
+            view.removeFromSuperview()
         }
         
+        switch game.heroType {
+        case .offense:
+            for hero in game.offenseCharacters {
+                let imageView = UIImageView.init(image: hero.profileImage)
+                characterStackView.addArrangedSubview(imageView)
+            }
+            characterStackViewWidthConstraint.constant = containerView.frame.width.multiplied(by: CGFloat(game.offenseCharacters.count - 1))
+
+        case .defense:
+            for hero in game.defenseCharacters {
+                let imageView = UIImageView.init(image: hero.profileImage)
+                characterStackView.addArrangedSubview(imageView)
+            }
+            characterStackViewWidthConstraint.constant = containerView.frame.width.multiplied(by: CGFloat(game.defenseCharacters.count - 1))
+        case .tank:
+            for hero in game.tankCharacters {
+                let imageView = UIImageView.init(image: hero.profileImage)
+                characterStackView.addArrangedSubview(imageView)
+            }
+            characterStackViewWidthConstraint.constant = containerView.frame.width.multiplied(by: CGFloat(game.tankCharacters.count - 1))
+
+        case .support:
+            for hero in game.supportCharacters {
+                let imageView = UIImageView.init(image: hero.profileImage)
+                characterStackView.addArrangedSubview(imageView)
+            }
+            characterStackViewWidthConstraint.constant = containerView.frame.width.multiplied(by: CGFloat(game.supportCharacters.count - 1))
+            
+        }
+        updateNameLabel()
+            
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        containerView.addSubview()
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        updateNameLabel()
     }
+    
+    func updateNameLabel() {
+        let placeInScrollView = Int(heroScrollView.contentOffset.x / heroScrollView.frame.size.width)
+        let hero = game.heroes[placeInScrollView]
+        heroNameLabel.text = hero.name.description
+        print(placeInScrollView)
+    }
+        
+
 }

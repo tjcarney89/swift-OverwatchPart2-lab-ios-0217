@@ -22,40 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reaper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06d-mA-QPp">
-                                <rect key="frame" x="110" y="101" width="155" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVERWATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06d-mA-QPp">
+                                <rect key="frame" x="99" y="120" width="178" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-x7-Hhn" userLabel="Container View">
-                                <rect key="frame" x="35" y="282" width="304" height="320"/>
-                                <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGA-Ou-QKl">
-                                        <rect key="frame" x="-7" y="-7" width="318" height="335"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFB-vH-u5y">
-                                                <rect key="frame" x="-7" y="-8" width="334" height="351"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="304" id="85t-km-oeL"/>
-                                                    <constraint firstAttribute="height" constant="320" id="t31-Gi-QP9"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                    </scrollView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="OGA-Ou-QKl" secondAttribute="trailing" id="aCw-dj-nze"/>
-                                    <constraint firstAttribute="bottom" secondItem="OGA-Ou-QKl" secondAttribute="bottom" id="dJT-D5-r5f"/>
-                                    <constraint firstItem="OGA-Ou-QKl" firstAttribute="leading" secondItem="cCa-x7-Hhn" secondAttribute="leading" id="nBV-hX-7ut"/>
-                                    <constraint firstItem="OGA-Ou-QKl" firstAttribute="top" secondItem="cCa-x7-Hhn" secondAttribute="top" id="xHr-Ff-maH"/>
-                                </constraints>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="moB-3u-YQs">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="moB-3u-YQs">
                                 <rect key="frame" x="25" y="619" width="324" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Offense"/>
                                     <segment title="Defense"/>
@@ -66,19 +40,54 @@
                                     <action selector="changeInHeroType:" destination="hHN-1C-9Rn" eventType="valueChanged" id="USd-Dt-Xdf"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-wt-gFi">
+                                <rect key="frame" x="25" y="314" width="324" height="290"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-Ez-P1r">
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="290"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-m8-jC7">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="290"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KIf-m8-jC7" firstAttribute="trailing" secondItem="J8i-Ez-P1r" secondAttribute="trailing" id="5R2-d7-wbT"/>
+                                            <constraint firstItem="KIf-m8-jC7" firstAttribute="top" secondItem="J8i-Ez-P1r" secondAttribute="top" id="LGi-iu-cbD"/>
+                                            <constraint firstItem="KIf-m8-jC7" firstAttribute="bottom" secondItem="J8i-Ez-P1r" secondAttribute="bottom" id="ThW-ZS-BQe"/>
+                                            <constraint firstItem="KIf-m8-jC7" firstAttribute="leading" secondItem="J8i-Ez-P1r" secondAttribute="leading" id="sFg-y2-XHw"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="J8i-Ez-P1r" secondAttribute="bottom" id="7aP-cR-KuG"/>
+                                    <constraint firstItem="KIf-m8-jC7" firstAttribute="height" secondItem="BQJ-wt-gFi" secondAttribute="height" id="Enq-Ie-9SA"/>
+                                    <constraint firstItem="J8i-Ez-P1r" firstAttribute="top" secondItem="BQJ-wt-gFi" secondAttribute="top" id="HPg-0h-kbj"/>
+                                    <constraint firstAttribute="trailing" secondItem="J8i-Ez-P1r" secondAttribute="trailing" id="LGg-tJ-Vyy"/>
+                                    <constraint firstItem="J8i-Ez-P1r" firstAttribute="leading" secondItem="BQJ-wt-gFi" secondAttribute="leading" id="hZt-Gw-QQT"/>
+                                    <constraint firstItem="KIf-m8-jC7" firstAttribute="width" secondItem="BQJ-wt-gFi" secondAttribute="width" id="pM4-43-F4r"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cCa-x7-Hhn" firstAttribute="leading" secondItem="hkR-mc-qK2" secondAttribute="leadingMargin" constant="20" id="KAc-69-TTq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cCa-x7-Hhn" secondAttribute="trailing" constant="20" id="KPZ-Cl-j32"/>
+                            <constraint firstItem="BQJ-wt-gFi" firstAttribute="leading" secondItem="hkR-mc-qK2" secondAttribute="leadingMargin" constant="9" id="BLe-bM-SPW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moB-3u-YQs" secondAttribute="trailing" constant="10" id="HYE-4e-zlf"/>
+                            <constraint firstItem="moB-3u-YQs" firstAttribute="leading" secondItem="hkR-mc-qK2" secondAttribute="leadingMargin" constant="9" id="KH3-GW-GhI"/>
+                            <constraint firstItem="06d-mA-QPp" firstAttribute="top" secondItem="2SI-oh-1Ef" secondAttribute="bottom" constant="100" id="KRk-ER-rRa"/>
+                            <constraint firstItem="06d-mA-QPp" firstAttribute="centerX" secondItem="hkR-mc-qK2" secondAttribute="centerX" id="r7a-8H-4iF"/>
+                            <constraint firstItem="qgO-H6-RJh" firstAttribute="top" secondItem="moB-3u-YQs" secondAttribute="bottom" constant="20" id="rzQ-yS-InZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BQJ-wt-gFi" secondAttribute="trailing" constant="10" id="tug-f3-0dX"/>
+                            <constraint firstItem="BQJ-wt-gFi" firstAttribute="top" secondItem="2SI-oh-1Ef" secondAttribute="bottom" constant="294" id="vQ4-xi-x4r"/>
+                            <constraint firstItem="qgO-H6-RJh" firstAttribute="top" secondItem="BQJ-wt-gFi" secondAttribute="bottom" constant="63" id="vgm-hA-GnT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="characterStackView" destination="LFB-vH-u5y" id="xYQ-To-ft6"/>
-                        <outlet property="characterStackViewWidthConstraint" destination="85t-km-oeL" id="f2m-TH-1VV"/>
-                        <outlet property="containerView" destination="cCa-x7-Hhn" id="jmO-QP-m1K"/>
+                        <outlet property="characterStackView" destination="KIf-m8-jC7" id="Lun-26-HQh"/>
+                        <outlet property="characterStackViewWidthConstraint" destination="pM4-43-F4r" id="36m-LC-VTO"/>
+                        <outlet property="containerView" destination="BQJ-wt-gFi" id="Za3-Ru-6Tx"/>
                         <outlet property="heroNameLabel" destination="06d-mA-QPp" id="Fgq-47-Kn0"/>
-                        <outlet property="heroScrollView" destination="OGA-Ou-QKl" id="CfU-vn-5h8"/>
+                        <outlet property="heroScrollView" destination="J8i-Ez-P1r" id="FNS-ar-DfX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vY-1B-hsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
